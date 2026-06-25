@@ -1,0 +1,2027 @@
+{
+  "meta": {
+    "product": "Adaptive SDK",
+    "tagline": "The drop-in SDK for adaptive, on-device AI.",
+    "generatedAt": "2026-06-16T09:00:00.000Z",
+    "seed": 424242,
+    "days": 60,
+    "startDate": "2026-04-17",
+    "endDate": "2026-06-15",
+    "injectedProblems": [
+      "Activation cliff: only ~31% of signups reach their first API call (healthy dev-tool benchmark ~55%).",
+      "Leaky week-2 retention: cohorts fall to ~33% by week 2 vs a ~46% healthy benchmark.",
+      "Channel-mix drag: Docs / SEO drives the most signups but the lowest activation (~24%), while GitHub activates best (~41%)."
+    ]
+  },
+  "daily": [
+    {
+      "date": "2026-04-17",
+      "dayIndex": 0,
+      "signups": 120,
+      "firstApiCall": 37,
+      "firstIntegration": 27,
+      "dau": 267,
+      "wau": 626,
+      "channels": {
+        "docs_seo": {
+          "signups": 50,
+          "spend": 817,
+          "activated": 12
+        },
+        "github": {
+          "signups": 32,
+          "spend": 208,
+          "activated": 13
+        },
+        "community": {
+          "signups": 23,
+          "spend": 295,
+          "activated": 7
+        },
+        "partnerships": {
+          "signups": 15,
+          "spend": 1904,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "dayIndex": 1,
+      "signups": 91,
+      "firstApiCall": 29,
+      "firstIntegration": 21,
+      "dau": 225,
+      "wau": 637,
+      "channels": {
+        "docs_seo": {
+          "signups": 39,
+          "spend": 625,
+          "activated": 10
+        },
+        "github": {
+          "signups": 24,
+          "spend": 158,
+          "activated": 10
+        },
+        "community": {
+          "signups": 17,
+          "spend": 202,
+          "activated": 5
+        },
+        "partnerships": {
+          "signups": 11,
+          "spend": 1477,
+          "activated": 4
+        }
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "dayIndex": 2,
+      "signups": 96,
+      "firstApiCall": 30,
+      "firstIntegration": 22,
+      "dau": 219,
+      "wau": 648,
+      "channels": {
+        "docs_seo": {
+          "signups": 40,
+          "spend": 617,
+          "activated": 10
+        },
+        "github": {
+          "signups": 26,
+          "spend": 169,
+          "activated": 10
+        },
+        "community": {
+          "signups": 19,
+          "spend": 235,
+          "activated": 6
+        },
+        "partnerships": {
+          "signups": 11,
+          "spend": 1493,
+          "activated": 4
+        }
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "dayIndex": 3,
+      "signups": 137,
+      "firstApiCall": 44,
+      "firstIntegration": 32,
+      "dau": 286,
+      "wau": 665,
+      "channels": {
+        "docs_seo": {
+          "signups": 58,
+          "spend": 912,
+          "activated": 15
+        },
+        "github": {
+          "signups": 36,
+          "spend": 269,
+          "activated": 15
+        },
+        "community": {
+          "signups": 27,
+          "spend": 339,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 16,
+          "spend": 2246,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "dayIndex": 4,
+      "signups": 136,
+      "firstApiCall": 42,
+      "firstIntegration": 31,
+      "dau": 292,
+      "wau": 673,
+      "channels": {
+        "docs_seo": {
+          "signups": 57,
+          "spend": 890,
+          "activated": 14
+        },
+        "github": {
+          "signups": 36,
+          "spend": 259,
+          "activated": 14
+        },
+        "community": {
+          "signups": 26,
+          "spend": 305,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 17,
+          "spend": 2192,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "dayIndex": 5,
+      "signups": 134,
+      "firstApiCall": 42,
+      "firstIntegration": 31,
+      "dau": 304,
+      "wau": 695,
+      "channels": {
+        "docs_seo": {
+          "signups": 54,
+          "spend": 844,
+          "activated": 13
+        },
+        "github": {
+          "signups": 38,
+          "spend": 271,
+          "activated": 15
+        },
+        "community": {
+          "signups": 27,
+          "spend": 314,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 15,
+          "spend": 1947,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "dayIndex": 6,
+      "signups": 131,
+      "firstApiCall": 41,
+      "firstIntegration": 29,
+      "dau": 308,
+      "wau": 711,
+      "channels": {
+        "docs_seo": {
+          "signups": 54,
+          "spend": 821,
+          "activated": 13
+        },
+        "github": {
+          "signups": 36,
+          "spend": 263,
+          "activated": 15
+        },
+        "community": {
+          "signups": 25,
+          "spend": 320,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 16,
+          "spend": 2291,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "dayIndex": 7,
+      "signups": 138,
+      "firstApiCall": 41,
+      "firstIntegration": 29,
+      "dau": 317,
+      "wau": 733,
+      "channels": {
+        "docs_seo": {
+          "signups": 59,
+          "spend": 964,
+          "activated": 14
+        },
+        "github": {
+          "signups": 36,
+          "spend": 257,
+          "activated": 14
+        },
+        "community": {
+          "signups": 27,
+          "spend": 322,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 16,
+          "spend": 2153,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "dayIndex": 8,
+      "signups": 104,
+      "firstApiCall": 33,
+      "firstIntegration": 24,
+      "dau": 257,
+      "wau": 756,
+      "channels": {
+        "docs_seo": {
+          "signups": 44,
+          "spend": 652,
+          "activated": 11
+        },
+        "github": {
+          "signups": 28,
+          "spend": 189,
+          "activated": 12
+        },
+        "community": {
+          "signups": 20,
+          "spend": 253,
+          "activated": 6
+        },
+        "partnerships": {
+          "signups": 12,
+          "spend": 1568,
+          "activated": 4
+        }
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "dayIndex": 9,
+      "signups": 97,
+      "firstApiCall": 31,
+      "firstIntegration": 22,
+      "dau": 272,
+      "wau": 774,
+      "channels": {
+        "docs_seo": {
+          "signups": 42,
+          "spend": 639,
+          "activated": 10
+        },
+        "github": {
+          "signups": 26,
+          "spend": 174,
+          "activated": 11
+        },
+        "community": {
+          "signups": 18,
+          "spend": 202,
+          "activated": 6
+        },
+        "partnerships": {
+          "signups": 11,
+          "spend": 1426,
+          "activated": 4
+        }
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "dayIndex": 10,
+      "signups": 139,
+      "firstApiCall": 44,
+      "firstIntegration": 32,
+      "dau": 348,
+      "wau": 799,
+      "channels": {
+        "docs_seo": {
+          "signups": 58,
+          "spend": 936,
+          "activated": 14
+        },
+        "github": {
+          "signups": 37,
+          "spend": 256,
+          "activated": 16
+        },
+        "community": {
+          "signups": 27,
+          "spend": 328,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 17,
+          "spend": 2366,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "dayIndex": 11,
+      "signups": 136,
+      "firstApiCall": 42,
+      "firstIntegration": 31,
+      "dau": 362,
+      "wau": 834,
+      "channels": {
+        "docs_seo": {
+          "signups": 55,
+          "spend": 904,
+          "activated": 13
+        },
+        "github": {
+          "signups": 39,
+          "spend": 260,
+          "activated": 16
+        },
+        "community": {
+          "signups": 26,
+          "spend": 298,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 16,
+          "spend": 2115,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "dayIndex": 12,
+      "signups": 146,
+      "firstApiCall": 46,
+      "firstIntegration": 34,
+      "dau": 382,
+      "wau": 867,
+      "channels": {
+        "docs_seo": {
+          "signups": 59,
+          "spend": 1004,
+          "activated": 14
+        },
+        "github": {
+          "signups": 41,
+          "spend": 308,
+          "activated": 17
+        },
+        "community": {
+          "signups": 29,
+          "spend": 341,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 17,
+          "spend": 2199,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "dayIndex": 13,
+      "signups": 145,
+      "firstApiCall": 46,
+      "firstIntegration": 32,
+      "dau": 393,
+      "wau": 899,
+      "channels": {
+        "docs_seo": {
+          "signups": 61,
+          "spend": 914,
+          "activated": 15
+        },
+        "github": {
+          "signups": 38,
+          "spend": 283,
+          "activated": 16
+        },
+        "community": {
+          "signups": 28,
+          "spend": 315,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 18,
+          "spend": 2396,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "dayIndex": 14,
+      "signups": 146,
+      "firstApiCall": 45,
+      "firstIntegration": 31,
+      "dau": 407,
+      "wau": 924,
+      "channels": {
+        "docs_seo": {
+          "signups": 63,
+          "spend": 982,
+          "activated": 15
+        },
+        "github": {
+          "signups": 37,
+          "spend": 257,
+          "activated": 15
+        },
+        "community": {
+          "signups": 28,
+          "spend": 336,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 18,
+          "spend": 2278,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "dayIndex": 15,
+      "signups": 108,
+      "firstApiCall": 34,
+      "firstIntegration": 25,
+      "dau": 333,
+      "wau": 969,
+      "channels": {
+        "docs_seo": {
+          "signups": 47,
+          "spend": 797,
+          "activated": 12
+        },
+        "github": {
+          "signups": 28,
+          "spend": 184,
+          "activated": 12
+        },
+        "community": {
+          "signups": 20,
+          "spend": 237,
+          "activated": 6
+        },
+        "partnerships": {
+          "signups": 13,
+          "spend": 1821,
+          "activated": 4
+        }
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "dayIndex": 16,
+      "signups": 113,
+      "firstApiCall": 34,
+      "firstIntegration": 25,
+      "dau": 342,
+      "wau": 1003,
+      "channels": {
+        "docs_seo": {
+          "signups": 49,
+          "spend": 739,
+          "activated": 12
+        },
+        "github": {
+          "signups": 31,
+          "spend": 206,
+          "activated": 12
+        },
+        "community": {
+          "signups": 20,
+          "spend": 237,
+          "activated": 6
+        },
+        "partnerships": {
+          "signups": 13,
+          "spend": 1705,
+          "activated": 4
+        }
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "dayIndex": 17,
+      "signups": 153,
+      "firstApiCall": 49,
+      "firstIntegration": 36,
+      "dau": 463,
+      "wau": 1053,
+      "channels": {
+        "docs_seo": {
+          "signups": 63,
+          "spend": 1028,
+          "activated": 16
+        },
+        "github": {
+          "signups": 42,
+          "spend": 298,
+          "activated": 17
+        },
+        "community": {
+          "signups": 30,
+          "spend": 374,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 18,
+          "spend": 2428,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "dayIndex": 18,
+      "signups": 150,
+      "firstApiCall": 48,
+      "firstIntegration": 36,
+      "dau": 479,
+      "wau": 1089,
+      "channels": {
+        "docs_seo": {
+          "signups": 63,
+          "spend": 984,
+          "activated": 16
+        },
+        "github": {
+          "signups": 40,
+          "spend": 272,
+          "activated": 17
+        },
+        "community": {
+          "signups": 28,
+          "spend": 319,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 19,
+          "spend": 2660,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "dayIndex": 19,
+      "signups": 149,
+      "firstApiCall": 48,
+      "firstIntegration": 34,
+      "dau": 506,
+      "wau": 1133,
+      "channels": {
+        "docs_seo": {
+          "signups": 64,
+          "spend": 997,
+          "activated": 16
+        },
+        "github": {
+          "signups": 39,
+          "spend": 292,
+          "activated": 17
+        },
+        "community": {
+          "signups": 28,
+          "spend": 324,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 18,
+          "spend": 2538,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "dayIndex": 20,
+      "signups": 153,
+      "firstApiCall": 49,
+      "firstIntegration": 35,
+      "dau": 502,
+      "wau": 1179,
+      "channels": {
+        "docs_seo": {
+          "signups": 67,
+          "spend": 1148,
+          "activated": 17
+        },
+        "github": {
+          "signups": 39,
+          "spend": 260,
+          "activated": 16
+        },
+        "community": {
+          "signups": 28,
+          "spend": 336,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 19,
+          "spend": 2558,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "dayIndex": 21,
+      "signups": 159,
+      "firstApiCall": 50,
+      "firstIntegration": 36,
+      "dau": 535,
+      "wau": 1227,
+      "channels": {
+        "docs_seo": {
+          "signups": 68,
+          "spend": 1089,
+          "activated": 17
+        },
+        "github": {
+          "signups": 42,
+          "spend": 288,
+          "activated": 18
+        },
+        "community": {
+          "signups": 30,
+          "spend": 374,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 19,
+          "spend": 2545,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "dayIndex": 22,
+      "signups": 111,
+      "firstApiCall": 34,
+      "firstIntegration": 25,
+      "dau": 448,
+      "wau": 1277,
+      "channels": {
+        "docs_seo": {
+          "signups": 47,
+          "spend": 720,
+          "activated": 12
+        },
+        "github": {
+          "signups": 31,
+          "spend": 205,
+          "activated": 12
+        },
+        "community": {
+          "signups": 20,
+          "spend": 226,
+          "activated": 6
+        },
+        "partnerships": {
+          "signups": 13,
+          "spend": 1648,
+          "activated": 4
+        }
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "dayIndex": 23,
+      "signups": 118,
+      "firstApiCall": 38,
+      "firstIntegration": 26,
+      "dau": 461,
+      "wau": 1318,
+      "channels": {
+        "docs_seo": {
+          "signups": 49,
+          "spend": 736,
+          "activated": 12
+        },
+        "github": {
+          "signups": 32,
+          "spend": 209,
+          "activated": 14
+        },
+        "community": {
+          "signups": 23,
+          "spend": 282,
+          "activated": 7
+        },
+        "partnerships": {
+          "signups": 14,
+          "spend": 1775,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "dayIndex": 24,
+      "signups": 146,
+      "firstApiCall": 46,
+      "firstIntegration": 33,
+      "dau": 617,
+      "wau": 1378,
+      "channels": {
+        "docs_seo": {
+          "signups": 60,
+          "spend": 941,
+          "activated": 15
+        },
+        "github": {
+          "signups": 42,
+          "spend": 287,
+          "activated": 17
+        },
+        "community": {
+          "signups": 27,
+          "spend": 331,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 17,
+          "spend": 2163,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-12",
+      "dayIndex": 25,
+      "signups": 165,
+      "firstApiCall": 53,
+      "firstIntegration": 38,
+      "dau": 624,
+      "wau": 1423,
+      "channels": {
+        "docs_seo": {
+          "signups": 68,
+          "spend": 1058,
+          "activated": 17
+        },
+        "github": {
+          "signups": 43,
+          "spend": 288,
+          "activated": 18
+        },
+        "community": {
+          "signups": 33,
+          "spend": 416,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2789,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-13",
+      "dayIndex": 26,
+      "signups": 167,
+      "firstApiCall": 54,
+      "firstIntegration": 38,
+      "dau": 627,
+      "wau": 1467,
+      "channels": {
+        "docs_seo": {
+          "signups": 70,
+          "spend": 1171,
+          "activated": 18
+        },
+        "github": {
+          "signups": 46,
+          "spend": 345,
+          "activated": 20
+        },
+        "community": {
+          "signups": 32,
+          "spend": 392,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 19,
+          "spend": 2436,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-14",
+      "dayIndex": 27,
+      "signups": 171,
+      "firstApiCall": 53,
+      "firstIntegration": 39,
+      "dau": 645,
+      "wau": 1501,
+      "channels": {
+        "docs_seo": {
+          "signups": 74,
+          "spend": 1130,
+          "activated": 18
+        },
+        "github": {
+          "signups": 44,
+          "spend": 304,
+          "activated": 19
+        },
+        "community": {
+          "signups": 33,
+          "spend": 425,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 20,
+          "spend": 2617,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-15",
+      "dayIndex": 28,
+      "signups": 158,
+      "firstApiCall": 48,
+      "firstIntegration": 34,
+      "dau": 687,
+      "wau": 1548,
+      "channels": {
+        "docs_seo": {
+          "signups": 65,
+          "spend": 1092,
+          "activated": 15
+        },
+        "github": {
+          "signups": 43,
+          "spend": 321,
+          "activated": 18
+        },
+        "community": {
+          "signups": 31,
+          "spend": 392,
+          "activated": 9
+        },
+        "partnerships": {
+          "signups": 19,
+          "spend": 2456,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "dayIndex": 29,
+      "signups": 125,
+      "firstApiCall": 39,
+      "firstIntegration": 29,
+      "dau": 531,
+      "wau": 1580,
+      "channels": {
+        "docs_seo": {
+          "signups": 52,
+          "spend": 834,
+          "activated": 13
+        },
+        "github": {
+          "signups": 35,
+          "spend": 232,
+          "activated": 14
+        },
+        "community": {
+          "signups": 23,
+          "spend": 284,
+          "activated": 7
+        },
+        "partnerships": {
+          "signups": 15,
+          "spend": 1927,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "dayIndex": 30,
+      "signups": 123,
+      "firstApiCall": 39,
+      "firstIntegration": 28,
+      "dau": 561,
+      "wau": 1616,
+      "channels": {
+        "docs_seo": {
+          "signups": 52,
+          "spend": 884,
+          "activated": 13
+        },
+        "github": {
+          "signups": 33,
+          "spend": 245,
+          "activated": 14
+        },
+        "community": {
+          "signups": 23,
+          "spend": 284,
+          "activated": 7
+        },
+        "partnerships": {
+          "signups": 15,
+          "spend": 2080,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-05-18",
+      "dayIndex": 31,
+      "signups": 171,
+      "firstApiCall": 56,
+      "firstIntegration": 41,
+      "dau": 730,
+      "wau": 1668,
+      "channels": {
+        "docs_seo": {
+          "signups": 69,
+          "spend": 1152,
+          "activated": 18
+        },
+        "github": {
+          "signups": 48,
+          "spend": 339,
+          "activated": 20
+        },
+        "community": {
+          "signups": 32,
+          "spend": 368,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 22,
+          "spend": 3051,
+          "activated": 8
+        }
+      }
+    },
+    {
+      "date": "2026-05-19",
+      "dayIndex": 32,
+      "signups": 178,
+      "firstApiCall": 56,
+      "firstIntegration": 40,
+      "dau": 723,
+      "wau": 1682,
+      "channels": {
+        "docs_seo": {
+          "signups": 75,
+          "spend": 1287,
+          "activated": 18
+        },
+        "github": {
+          "signups": 49,
+          "spend": 362,
+          "activated": 21
+        },
+        "community": {
+          "signups": 33,
+          "spend": 404,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2835,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-20",
+      "dayIndex": 33,
+      "signups": 170,
+      "firstApiCall": 52,
+      "firstIntegration": 38,
+      "dau": 769,
+      "wau": 1730,
+      "channels": {
+        "docs_seo": {
+          "signups": 72,
+          "spend": 1075,
+          "activated": 17
+        },
+        "github": {
+          "signups": 46,
+          "spend": 319,
+          "activated": 18
+        },
+        "community": {
+          "signups": 33,
+          "spend": 405,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 19,
+          "spend": 2515,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "dayIndex": 34,
+      "signups": 168,
+      "firstApiCall": 52,
+      "firstIntegration": 38,
+      "dau": 772,
+      "wau": 1758,
+      "channels": {
+        "docs_seo": {
+          "signups": 72,
+          "spend": 1101,
+          "activated": 17
+        },
+        "github": {
+          "signups": 43,
+          "spend": 295,
+          "activated": 18
+        },
+        "community": {
+          "signups": 32,
+          "spend": 385,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2713,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-22",
+      "dayIndex": 35,
+      "signups": 177,
+      "firstApiCall": 56,
+      "firstIntegration": 40,
+      "dau": 770,
+      "wau": 1778,
+      "channels": {
+        "docs_seo": {
+          "signups": 74,
+          "spend": 1237,
+          "activated": 18
+        },
+        "github": {
+          "signups": 48,
+          "spend": 314,
+          "activated": 20
+        },
+        "community": {
+          "signups": 34,
+          "spend": 434,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2974,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-23",
+      "dayIndex": 36,
+      "signups": 122,
+      "firstApiCall": 39,
+      "firstIntegration": 29,
+      "dau": 633,
+      "wau": 1803,
+      "channels": {
+        "docs_seo": {
+          "signups": 51,
+          "spend": 844,
+          "activated": 13
+        },
+        "github": {
+          "signups": 34,
+          "spend": 236,
+          "activated": 14
+        },
+        "community": {
+          "signups": 23,
+          "spend": 271,
+          "activated": 7
+        },
+        "partnerships": {
+          "signups": 14,
+          "spend": 1905,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "dayIndex": 37,
+      "signups": 126,
+      "firstApiCall": 40,
+      "firstIntegration": 29,
+      "dau": 632,
+      "wau": 1820,
+      "channels": {
+        "docs_seo": {
+          "signups": 54,
+          "spend": 824,
+          "activated": 13
+        },
+        "github": {
+          "signups": 34,
+          "spend": 229,
+          "activated": 14
+        },
+        "community": {
+          "signups": 24,
+          "spend": 268,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 14,
+          "spend": 1880,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-05-25",
+      "dayIndex": 38,
+      "signups": 170,
+      "firstApiCall": 53,
+      "firstIntegration": 39,
+      "dau": 792,
+      "wau": 1832,
+      "channels": {
+        "docs_seo": {
+          "signups": 73,
+          "spend": 1209,
+          "activated": 17
+        },
+        "github": {
+          "signups": 45,
+          "spend": 311,
+          "activated": 19
+        },
+        "community": {
+          "signups": 32,
+          "spend": 370,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 20,
+          "spend": 2661,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-26",
+      "dayIndex": 39,
+      "signups": 179,
+      "firstApiCall": 55,
+      "firstIntegration": 39,
+      "dau": 793,
+      "wau": 1846,
+      "channels": {
+        "docs_seo": {
+          "signups": 76,
+          "spend": 1177,
+          "activated": 18
+        },
+        "github": {
+          "signups": 49,
+          "spend": 343,
+          "activated": 20
+        },
+        "community": {
+          "signups": 33,
+          "spend": 408,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2785,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "dayIndex": 40,
+      "signups": 171,
+      "firstApiCall": 53,
+      "firstIntegration": 40,
+      "dau": 833,
+      "wau": 1867,
+      "channels": {
+        "docs_seo": {
+          "signups": 73,
+          "spend": 1194,
+          "activated": 18
+        },
+        "github": {
+          "signups": 44,
+          "spend": 307,
+          "activated": 18
+        },
+        "community": {
+          "signups": 33,
+          "spend": 374,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2850,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "dayIndex": 41,
+      "signups": 179,
+      "firstApiCall": 56,
+      "firstIntegration": 39,
+      "dau": 830,
+      "wau": 1875,
+      "channels": {
+        "docs_seo": {
+          "signups": 74,
+          "spend": 1256,
+          "activated": 17
+        },
+        "github": {
+          "signups": 50,
+          "spend": 364,
+          "activated": 21
+        },
+        "community": {
+          "signups": 34,
+          "spend": 405,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2907,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-29",
+      "dayIndex": 42,
+      "signups": 175,
+      "firstApiCall": 55,
+      "firstIntegration": 41,
+      "dau": 826,
+      "wau": 1889,
+      "channels": {
+        "docs_seo": {
+          "signups": 75,
+          "spend": 1181,
+          "activated": 19
+        },
+        "github": {
+          "signups": 45,
+          "spend": 310,
+          "activated": 18
+        },
+        "community": {
+          "signups": 35,
+          "spend": 438,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 20,
+          "spend": 2592,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-05-30",
+      "dayIndex": 43,
+      "signups": 134,
+      "firstApiCall": 42,
+      "firstIntegration": 30,
+      "dau": 672,
+      "wau": 1915,
+      "channels": {
+        "docs_seo": {
+          "signups": 57,
+          "spend": 916,
+          "activated": 14
+        },
+        "github": {
+          "signups": 36,
+          "spend": 257,
+          "activated": 15
+        },
+        "community": {
+          "signups": 25,
+          "spend": 302,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 16,
+          "spend": 2040,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-05-31",
+      "dayIndex": 44,
+      "signups": 143,
+      "firstApiCall": 45,
+      "firstIntegration": 32,
+      "dau": 643,
+      "wau": 1908,
+      "channels": {
+        "docs_seo": {
+          "signups": 61,
+          "spend": 945,
+          "activated": 15
+        },
+        "github": {
+          "signups": 39,
+          "spend": 263,
+          "activated": 16
+        },
+        "community": {
+          "signups": 25,
+          "spend": 290,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 18,
+          "spend": 2250,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-06-01",
+      "dayIndex": 45,
+      "signups": 183,
+      "firstApiCall": 56,
+      "firstIntegration": 39,
+      "dau": 839,
+      "wau": 1926,
+      "channels": {
+        "docs_seo": {
+          "signups": 79,
+          "spend": 1210,
+          "activated": 19
+        },
+        "github": {
+          "signups": 49,
+          "spend": 357,
+          "activated": 20
+        },
+        "community": {
+          "signups": 33,
+          "spend": 383,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 22,
+          "spend": 3024,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-06-02",
+      "dayIndex": 46,
+      "signups": 191,
+      "firstApiCall": 60,
+      "firstIntegration": 44,
+      "dau": 849,
+      "wau": 1941,
+      "channels": {
+        "docs_seo": {
+          "signups": 81,
+          "spend": 1302,
+          "activated": 20
+        },
+        "github": {
+          "signups": 51,
+          "spend": 339,
+          "activated": 21
+        },
+        "community": {
+          "signups": 35,
+          "spend": 443,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 24,
+          "spend": 3313,
+          "activated": 8
+        }
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "dayIndex": 47,
+      "signups": 190,
+      "firstApiCall": 59,
+      "firstIntegration": 44,
+      "dau": 835,
+      "wau": 1937,
+      "channels": {
+        "docs_seo": {
+          "signups": 80,
+          "spend": 1232,
+          "activated": 20
+        },
+        "github": {
+          "signups": 51,
+          "spend": 332,
+          "activated": 20
+        },
+        "community": {
+          "signups": 36,
+          "spend": 438,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 23,
+          "spend": 3026,
+          "activated": 8
+        }
+      }
+    },
+    {
+      "date": "2026-06-04",
+      "dayIndex": 48,
+      "signups": 180,
+      "firstApiCall": 56,
+      "firstIntegration": 39,
+      "dau": 861,
+      "wau": 1954,
+      "channels": {
+        "docs_seo": {
+          "signups": 78,
+          "spend": 1318,
+          "activated": 20
+        },
+        "github": {
+          "signups": 47,
+          "spend": 328,
+          "activated": 19
+        },
+        "community": {
+          "signups": 33,
+          "spend": 395,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 22,
+          "spend": 3002,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-06-05",
+      "dayIndex": 49,
+      "signups": 181,
+      "firstApiCall": 58,
+      "firstIntegration": 42,
+      "dau": 840,
+      "wau": 1946,
+      "channels": {
+        "docs_seo": {
+          "signups": 75,
+          "spend": 1154,
+          "activated": 19
+        },
+        "github": {
+          "signups": 49,
+          "spend": 348,
+          "activated": 20
+        },
+        "community": {
+          "signups": 34,
+          "spend": 416,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 23,
+          "spend": 3160,
+          "activated": 8
+        }
+      }
+    },
+    {
+      "date": "2026-06-06",
+      "dayIndex": 50,
+      "signups": 132,
+      "firstApiCall": 39,
+      "firstIntegration": 29,
+      "dau": 679,
+      "wau": 1968,
+      "channels": {
+        "docs_seo": {
+          "signups": 55,
+          "spend": 906,
+          "activated": 13
+        },
+        "github": {
+          "signups": 35,
+          "spend": 229,
+          "activated": 14
+        },
+        "community": {
+          "signups": 26,
+          "spend": 329,
+          "activated": 7
+        },
+        "partnerships": {
+          "signups": 16,
+          "spend": 2054,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-06-07",
+      "dayIndex": 51,
+      "signups": 136,
+      "firstApiCall": 40,
+      "firstIntegration": 29,
+      "dau": 698,
+      "wau": 1977,
+      "channels": {
+        "docs_seo": {
+          "signups": 59,
+          "spend": 974,
+          "activated": 13
+        },
+        "github": {
+          "signups": 37,
+          "spend": 240,
+          "activated": 15
+        },
+        "community": {
+          "signups": 25,
+          "spend": 298,
+          "activated": 7
+        },
+        "partnerships": {
+          "signups": 15,
+          "spend": 1918,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "dayIndex": 52,
+      "signups": 177,
+      "firstApiCall": 53,
+      "firstIntegration": 37,
+      "dau": 867,
+      "wau": 1970,
+      "channels": {
+        "docs_seo": {
+          "signups": 72,
+          "spend": 1164,
+          "activated": 17
+        },
+        "github": {
+          "signups": 49,
+          "spend": 362,
+          "activated": 20
+        },
+        "community": {
+          "signups": 35,
+          "spend": 406,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2930,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "dayIndex": 53,
+      "signups": 177,
+      "firstApiCall": 52,
+      "firstIntegration": 36,
+      "dau": 836,
+      "wau": 1949,
+      "channels": {
+        "docs_seo": {
+          "signups": 73,
+          "spend": 1199,
+          "activated": 17
+        },
+        "github": {
+          "signups": 48,
+          "spend": 348,
+          "activated": 19
+        },
+        "community": {
+          "signups": 35,
+          "spend": 421,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2874,
+          "activated": 6
+        }
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "dayIndex": 54,
+      "signups": 180,
+      "firstApiCall": 53,
+      "firstIntegration": 40,
+      "dau": 860,
+      "wau": 1924,
+      "channels": {
+        "docs_seo": {
+          "signups": 74,
+          "spend": 1155,
+          "activated": 17
+        },
+        "github": {
+          "signups": 50,
+          "spend": 337,
+          "activated": 19
+        },
+        "community": {
+          "signups": 35,
+          "spend": 410,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2741,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "dayIndex": 55,
+      "signups": 190,
+      "firstApiCall": 57,
+      "firstIntegration": 42,
+      "dau": 822,
+      "wau": 1916,
+      "channels": {
+        "docs_seo": {
+          "signups": 80,
+          "spend": 1329,
+          "activated": 19
+        },
+        "github": {
+          "signups": 50,
+          "spend": 327,
+          "activated": 20
+        },
+        "community": {
+          "signups": 37,
+          "spend": 450,
+          "activated": 11
+        },
+        "partnerships": {
+          "signups": 23,
+          "spend": 3066,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "dayIndex": 56,
+      "signups": 177,
+      "firstApiCall": 52,
+      "firstIntegration": 38,
+      "dau": 840,
+      "wau": 1888,
+      "channels": {
+        "docs_seo": {
+          "signups": 75,
+          "spend": 1217,
+          "activated": 17
+        },
+        "github": {
+          "signups": 48,
+          "spend": 323,
+          "activated": 18
+        },
+        "community": {
+          "signups": 33,
+          "spend": 418,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 21,
+          "spend": 2876,
+          "activated": 7
+        }
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "dayIndex": 57,
+      "signups": 137,
+      "firstApiCall": 40,
+      "firstIntegration": 28,
+      "dau": 641,
+      "wau": 1871,
+      "channels": {
+        "docs_seo": {
+          "signups": 56,
+          "spend": 931,
+          "activated": 13
+        },
+        "github": {
+          "signups": 38,
+          "spend": 272,
+          "activated": 14
+        },
+        "community": {
+          "signups": 26,
+          "spend": 292,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 17,
+          "spend": 2238,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "dayIndex": 58,
+      "signups": 136,
+      "firstApiCall": 39,
+      "firstIntegration": 27,
+      "dau": 635,
+      "wau": 1848,
+      "channels": {
+        "docs_seo": {
+          "signups": 59,
+          "spend": 933,
+          "activated": 13
+        },
+        "github": {
+          "signups": 35,
+          "spend": 256,
+          "activated": 13
+        },
+        "community": {
+          "signups": 26,
+          "spend": 309,
+          "activated": 8
+        },
+        "partnerships": {
+          "signups": 16,
+          "spend": 2175,
+          "activated": 5
+        }
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "dayIndex": 59,
+      "signups": 186,
+      "firstApiCall": 57,
+      "firstIntegration": 42,
+      "dau": 793,
+      "wau": 1834,
+      "channels": {
+        "docs_seo": {
+          "signups": 78,
+          "spend": 1247,
+          "activated": 19
+        },
+        "github": {
+          "signups": 51,
+          "spend": 354,
+          "activated": 21
+        },
+        "community": {
+          "signups": 35,
+          "spend": 406,
+          "activated": 10
+        },
+        "partnerships": {
+          "signups": 22,
+          "spend": 3044,
+          "activated": 7
+        }
+      }
+    }
+  ],
+  "cohorts": [
+    {
+      "cohortIndex": 0,
+      "startDate": "2026-04-17",
+      "size": 845,
+      "retention": [
+        1,
+        0.5911,
+        0.3265,
+        0.2722,
+        0.2339
+      ]
+    },
+    {
+      "cohortIndex": 1,
+      "startDate": "2026-04-24",
+      "size": 905,
+      "retention": [
+        1,
+        0.598,
+        0.3309,
+        0.266,
+        0.2285
+      ]
+    },
+    {
+      "cohortIndex": 2,
+      "startDate": "2026-05-01",
+      "size": 972,
+      "retention": [
+        1,
+        0.6203,
+        0.3328,
+        0.2678,
+        0.2232
+      ]
+    },
+    {
+      "cohortIndex": 3,
+      "startDate": "2026-05-08",
+      "size": 1037,
+      "retention": [
+        1,
+        0.5979,
+        0.3339,
+        0.2727,
+        0.2276
+      ]
+    },
+    {
+      "cohortIndex": 4,
+      "startDate": "2026-05-15",
+      "size": 1093,
+      "retention": [
+        1,
+        0.6065,
+        0.3232,
+        0.2604,
+        0.2254
+      ]
+    },
+    {
+      "cohortIndex": 5,
+      "startDate": "2026-05-22",
+      "size": 1124,
+      "retention": [
+        1,
+        0.6221,
+        0.3377,
+        0.2852
+      ]
+    },
+    {
+      "cohortIndex": 6,
+      "startDate": "2026-05-29",
+      "size": 1196,
+      "retention": [
+        1,
+        0.6165,
+        0.3441
+      ]
+    },
+    {
+      "cohortIndex": 7,
+      "startDate": "2026-06-05",
+      "size": 1173,
+      "retention": [
+        1,
+        0.6281
+      ]
+    },
+    {
+      "cohortIndex": 8,
+      "startDate": "2026-06-12",
+      "size": 636,
+      "retention": [
+        1
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "key": "docs_seo",
+      "label": "Docs / SEO",
+      "blurb": "Organic search + documentation",
+      "signups": 3781,
+      "spend": 60538,
+      "activated": 920,
+      "cac": 16.01,
+      "activationRate": 0.2433
+    },
+    {
+      "key": "github",
+      "label": "GitHub",
+      "blurb": "Open-source repo, README & stars",
+      "signups": 2418,
+      "spend": 16818,
+      "activated": 989,
+      "cac": 6.96,
+      "activationRate": 0.409
+    },
+    {
+      "key": "community",
+      "label": "Community / Discord",
+      "blurb": "Developer community & Discord",
+      "signups": 1708,
+      "spend": 20574,
+      "activated": 526,
+      "cac": 12.05,
+      "activationRate": 0.308
+    },
+    {
+      "key": "partnerships",
+      "label": "Partnerships",
+      "blurb": "Co-marketing & integration deals",
+      "signups": 1074,
+      "spend": 143596,
+      "activated": 355,
+      "cac": 133.7,
+      "activationRate": 0.3305
+    }
+  ],
+  "benchmarks": {
+    "activationRateHealthy": 0.55,
+    "apiToIntegrationHealthy": 0.78,
+    "week1RetentionHealthy": 0.62,
+    "week2RetentionHealthy": 0.46,
+    "week4RetentionHealthy": 0.3
+  }
+}
