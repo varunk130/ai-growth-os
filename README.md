@@ -1,4 +1,8 @@
-# Compound — an agentic Growth Experiment Engine
+<p align="center">
+  <img src="assets/hero.svg" alt="AI Growth OS — an agentic Growth Experiment Engine. Six agents find a funnel leak, design and ship an experiment, call the result with a significance test, and compound every win into the next cycle." width="100%" />
+</p>
+
+# AI Growth OS — an agentic Growth Experiment Engine
 
 ![Next.js 14](https://img.shields.io/badge/Next.js-14-000?logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white) ![No API keys](https://img.shields.io/badge/API_keys-none-22c55e) ![Runs offline](https://img.shields.io/badge/runs-offline-8b5cf6) ![Deploy: Vercel](https://img.shields.io/badge/deploy-Vercel-000?logo=vercel&logoColor=white)
 
@@ -6,7 +10,7 @@
 
 > Founding growth isn't campaigns. It's a **compounding experiment loop**. Compound runs that loop end-to-end — and shows its work.
 
-A standalone, production-quality demo of a **real in-app multi-agent runtime**. Six named agents find a funnel leak, design an experiment, write a shippable asset, and call the result with a significance test — then compound every learning into the next cycle. It runs **completely offline**: no API keys, no external LLM calls, nothing to configure.
+A standalone, production-quality demo of a **real in-app multi-agent runtime** (codename **Compound**). Six named agents find a funnel leak, design an experiment, write a shippable asset, and call the result with a significance test — then compound every learning into the next cycle. It runs **completely offline**: no API keys, no external LLM calls, nothing to configure.
 
 **Stack:** Next.js 14 (App Router) · TypeScript · Tailwind · framer-motion · recharts · lucide-react · @faker-js/faker (seed only)
 
