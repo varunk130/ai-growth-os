@@ -154,5 +154,14 @@ Everything downstream — leak ranking, ICE, stats, the growth model, the agents
 - **Accessibility:** keyboard navigable, visible focus, AA contrast, `prefers-reduced-motion` respected (animations and stagger collapse to instant).
 - **Determinism:** the dataset and the agent loop are seeded, so the demo reproduces exactly.
 
+---
+
+## Related apps
+
+Part of a five-app multi-agent showcase, all offline and key-free:
+
+- [ai-customer-acquisition](https://github.com/varunk130/ai-customer-acquisition) — **Beacon**, an agentic paid-acquisition engine with live reallocation
+- [ai-revops](https://github.com/varunk130/ai-revops) — **Atlas**, GTM + Partnerships + RevOps into one Vertical Launch Plan
+
 Built by **Varun Kulkarni** · synthetic data · for an internal AI-upskilling showcase.
 
