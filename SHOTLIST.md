@@ -1,6 +1,6 @@
 # Compound — 60–90s screen-recording shot list
 
-> Companion to the app **[README](./README.md)** · part of the **[AI PM Agent Showcase](../README.md)**.
+> Companion to the app **[README](./README.md)** · part of the **[AI PM Agent Showcase](https://github.com/varunk130?tab=repositories)**.
 
 Target length **75s**. Record at 1440×900, dark UI, cursor visible. Let animations breathe — don't rush clicks.
 
