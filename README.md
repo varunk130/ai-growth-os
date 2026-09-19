@@ -18,7 +18,7 @@ A standalone, production-quality demo of a **real in-app multi-agent runtime** (
 
 ## What this demonstrates
 
-Compound shows that an agentic system can run a genuine growth loop with **real computation, not theater**: funnel math, ICE prioritization, two-proportion sample sizing, and a z-test/p-value readout are all computed live on a synthetic dataset. The signature **Agent Trace** makes the multi-agent execution watchable on two levels at once — a plain-language layer ("what this agent figured out and why it matters") and a technical layer (agent, tool calls, structured result). And because every shipped win is written to **compound-memory** and folded into the growth model, the loop visibly gets smarter on each cycle.
+Compound shows that an agentic system can run a genuine growth loop with **real computation, not theater**: funnel math, GTM leverage prioritization, two-proportion sample sizing, and a z-test/p-value readout are all computed live on a synthetic dataset. The signature **Agent Trace** makes the multi-agent execution watchable on two levels at once — a plain-language layer ("what this agent figured out and why it matters") and a technical layer (agent, tool calls, structured result). And because every shipped win is written to **compound-memory** and folded into the growth model, the loop visibly gets smarter on each cycle.
 
 ---
 
@@ -49,7 +49,7 @@ npm run build && npm start
 >
 > I'll type a real goal: *'WAU is flat this week — find the leak and run the next experiment.'* Watch the **Agent Trace** on the right.
 >
-> The **Loop** orchestrator checks its memory and dispatches. The **Funnel Analyst** queries 60 days of real data and finds the biggest leak by modeled WAU impact — an **activation cliff**: only 31% of signups make a first API call, against a 55% benchmark. The **Hypothesis Writer** proposes eight testable bets. The **Prioritizer** scores them with real ICE math and picks the winner. The **Experiment Designer** sizes the test — sample size and runtime — with a real two-proportion calculation. **Variant Studio** assembles the actual asset: here's a genuine onboarding email, real usable copy. And **Readout** simulates a result, runs a z-test, and makes the call: a 20% lift, p under 0.001 — **ship it**.
+> The **Loop** orchestrator checks its memory and dispatches. The **Funnel Analyst** queries 60 days of real data and finds the biggest leak by modeled WAU impact — an **activation cliff**: only 31% of signups make a first API call, against a 55% benchmark. The **Hypothesis Writer** proposes eight testable bets. The **Prioritizer** scores them on revenue impact, ICP fit, evidence, and time-to-signal and picks the winner. The **Experiment Designer** sizes the test — sample size and runtime — with a real two-proportion calculation. **Variant Studio** assembles the actual asset: here's a genuine onboarding email, real usable copy. And **Readout** simulates a result, runs a z-test, and makes the call: a 20% lift, p under 0.001 — **ship it**.
 >
 > Now the payoff. That win is written to **compound-memory**, and the modeled WAU jumps. I hit **Run another cycle** — and because Compound remembers, it *skips* the leak it already fixed and finds the next one: leaky week-2 retention. The WAU projection compounds again.
 >
@@ -61,7 +61,7 @@ npm run build && npm start
 
 A goal enters the **Orchestrator (Loop)**, which plans a cycle and dispatches six typed sub-agents over an observable message bus. Sub-agents invoke **named skills** that read and compute over a **local synthetic dataset** (`data/funnel.json`) and a **curated content library** (`content/`). Two kinds of output, both key-free:
 
-- **Analytical** (leak ranking, ICE, sample size, significance test) = genuine deterministic computation in `src/lib/{analytics,stats}.ts`.
+- **Analytical** (leak ranking, GTM leverage, sample size, significance test) = genuine deterministic computation in `src/lib/{analytics,stats}.ts`.
 - **Generative** (hypotheses, shippable assets) = selected/assembled from the scenario-specific library in `content/`, routed through a single LLM seam (`src/lib/llm.ts`).
 
 The backwards edge — **compound-memory** — feeds each Readout into the next Loop, which is what makes growth compound.
@@ -70,7 +70,7 @@ The backwards edge — **compound-memory** — feeds each Readout into the next 
 Goal → Loop (orchestrator)
         ├─ Funnel Analyst    → funnel-query     ┐
         ├─ Hypothesis Writer → content:hypotheses│
-        ├─ Prioritizer       → ice-score        │ read/compute over
+        ├─ Prioritizer       → gtm-leverage     │ read/compute over
         ├─ Experiment Designer → experiment-stats│ data/funnel.json + content/
         ├─ Variant Studio    → llm-seam + content│
         └─ Readout           → experiment-stats  ┘
@@ -86,7 +86,7 @@ Goal → Loop (orchestrator)
 | `src/skills/` | Named, reusable skills the orchestrator invokes by name |
 | `src/agents/` | `orchestrator` (Loop) + six typed sub-agent modules + trace types |
 | `content/` | Curated hypotheses, shippable assets, guided-demo narration |
-| `src/components/demo/` | Agent Trace, growth widget, ICE table, variant preview, readout, projection chart, learnings library |
+| `src/components/demo/` | Agent Trace, growth widget, GTM leverage table, variant preview, readout, projection chart, learnings library |
 | `src/app/` | Home · Problem→Solution · How it works · Live demo · Results |
 
 ---
@@ -99,7 +99,7 @@ Goal → Loop (orchestrator)
 | **Loop** | Orchestrator | Owns the WAU goal, plans the cycle, dispatches sub-agents, compounds learnings. |
 | **Funnel Analyst** | Analysis | Queries the dataset and ranks leaks by modeled WAU impact. |
 | **Hypothesis Writer** | Generative | Proposes testable bets that target the leak (from `content/`). |
-| **Prioritizer** | Analysis | Scores bets by ICE (Impact × Confidence × Ease) and picks the winner. |
+| **Prioritizer** | Analysis | Scores bets by GTM Leverage (revenue impact, ICP fit, evidence, time-to-signal) and picks the winner. |
 | **Experiment Designer** | Analysis | Sizes the test: metric, two-proportion sample size, runtime. |
 | **Variant Studio** | Generative | Assembles the actual shippable asset via the LLM seam. |
 | **Readout** | Analysis | Runs a real significance test on a simulated result and calls ship/kill. |
@@ -108,7 +108,7 @@ Goal → Loop (orchestrator)
 | Skill | One-liner |
 | --- | --- |
 | `funnel-query` | Computes stage conversions, ranks leaks vs benchmarks, surfaces channel efficiency. |
-| `ice-score` | Computes and ranks ICE scores to pick the next experiment. |
+| `gtm-leverage` | Computes the 0–100 GTM Leverage Score for each bet and ranks them to pick the next experiment. |
 | `experiment-stats` | Two-proportion sample size + z-test / p-value / 95% CI. |
 | `compound-memory` | Persists learnings and feeds them into the next cycle — the compounding. |
 
@@ -144,7 +144,7 @@ The runtime only depends on the typed shape in `src/lib/dataset-types.ts` (`Funn
 2. Point `src/lib/dataset.ts` at it (replace the JSON import).
 3. Adjust `benchmarks` in the seed/data to your category's healthy reference rates.
 
-Everything downstream — leak ranking, ICE, stats, the growth model, the agents — is data-source-agnostic and keeps working.
+Everything downstream — leak ranking, GTM leverage, stats, the growth model, the agents — is data-source-agnostic and keeps working.
 
 ---
 
