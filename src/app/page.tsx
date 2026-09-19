@@ -77,7 +77,7 @@ export default function HomePage() {
             {
               icon: Sparkles,
               title: "Run the experiment",
-              body: "Hypotheses, ICE scoring, sample-size math, a real shippable asset, and a significance-tested ship/kill call — all computed, all visible.",
+              body: "Hypotheses, GTM leverage scoring, sample-size math, a real shippable asset, and a significance-tested ship/kill call — all computed, all visible.",
               accent: "signal" as const,
             },
             {

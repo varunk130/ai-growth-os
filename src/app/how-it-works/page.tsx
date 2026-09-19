@@ -81,7 +81,7 @@ export default function HowItWorksPage() {
             </div>
             <h3 className="mt-4 font-display text-lg font-semibold text-white">Analytical = real computation</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-400">
-              Funnel conversions, leak ranking, ICE scores, two-proportion sample sizes, and the z-test / p-value in the readout
+              Funnel conversions, leak ranking, GTM leverage scores, two-proportion sample sizes, and the z-test / p-value in the readout
               are all genuine math on the dataset. Nothing is mocked.
             </p>
           </div>

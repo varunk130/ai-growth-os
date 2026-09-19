@@ -19,7 +19,7 @@ function assistantSummary(r: CycleResult): string {
   const ship = r.readout.decision === "ship";
   return [
     `Found the ${r.leak.label.toLowerCase()} — ${pct(r.leak.metric)} vs a ${pct(r.leak.benchmark)} benchmark.`,
-    `Top experiment by ICE: “${r.topExperiment.hypothesis.statement}”.`,
+    `Top experiment by GTM leverage: “${r.topExperiment.hypothesis.statement}”.`,
     `Sized at ${num(r.design.sampleSizePerArm)}/arm (~${r.design.estRuntimeDays} days).`,
     `Readout: ${signedPct(r.readout.relLift)}${ship ? " and significant" : ""} → ${r.readout.decision.toUpperCase()}.`,
     `Modeled WAU ${num(r.wauBefore)} → ${num(r.wauAfter)}.`,

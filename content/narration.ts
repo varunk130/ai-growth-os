@@ -16,7 +16,7 @@ export const NARRATION: Record<AgentId, string> = {
   loop: "Loop takes the goal, checks its memory for what it already knows, and plans a single experiment cycle.",
   "funnel-analyst": "The Funnel Analyst queries 60 days of real data and pinpoints the single biggest place users drop out.",
   "hypothesis-writer": "The Hypothesis Writer proposes a set of testable bets aimed squarely at that leak.",
-  prioritizer: "The Prioritizer scores every bet with real ICE math and picks the one experiment to run now.",
+  prioritizer: "The Prioritizer scores every bet on revenue impact, ICP fit, evidence, and time-to-signal, then picks the one experiment to run now.",
   "experiment-designer": "The Experiment Designer sizes the test — metric, sample size and runtime — using real statistics.",
   "variant-studio": "Variant Studio assembles the actual asset to ship, drawn from the curated content library.",
   readout: "Readout simulates the result, runs a real significance test, and makes the ship-or-kill call.",

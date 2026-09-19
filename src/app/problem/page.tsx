@@ -20,7 +20,7 @@ const PAINS = [
   {
     icon: ListChecks,
     title: "Ideas beat evidence",
-    body: "Experiment backlogs are unranked opinions. The highest-leverage bet rarely wins the week, because nobody does the ICE and the stats.",
+    body: "Experiment backlogs are unranked opinions. The highest-leverage bet rarely wins the week, because nobody weighs revenue, ICP fit, and the stats.",
   },
   {
     icon: Eraser,
@@ -89,7 +89,7 @@ export default function ProblemPage() {
             </h2>
             <p className="mt-4 text-[15px] leading-relaxed text-slate-400">
               Compound is a real multi-agent runtime. An Orchestrator owns the WAU goal and dispatches six sub-agents: they
-              query the data, rank leaks by WAU impact, score hypotheses with ICE, size the test with real statistics, assemble
+              query the data, rank leaks by WAU impact, score hypotheses by GTM leverage, size the test with real statistics, assemble
               the actual asset, and call the result with a significance test. Then every win is written to memory and folded into
               the next cycle — so the loop starts smarter each time. No dashboards to read, no API keys to set.
             </p>
@@ -107,7 +107,7 @@ export default function ProblemPage() {
             <div className="space-y-3">
               {[
                 ["Find", "Funnel Analyst ranks every leak by modeled WAU impact."],
-                ["Prioritize", "ICE math picks the one experiment worth running now."],
+                ["Prioritize", "GTM leverage math picks the one experiment worth running now."],
                 ["Build", "Variant Studio assembles a real, shippable asset."],
                 ["Decide", "Readout runs a significance test and ships or kills."],
                 ["Compound", "The win feeds the next cycle — growth stacks."],
