@@ -35,6 +35,12 @@ Then open **/demo** and hit **Run guided demo**. To regenerate the dataset:
 npm run seed     # rewrites data/funnel.json deterministically
 ```
 
+Check it (the same steps CI runs on every push and PR):
+
+```bash
+npm run lint && npm run typecheck && npm test
+```
+
 Build for production (Vercel-ready, **zero environment variables**):
 
 ```bash
