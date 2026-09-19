@@ -1,25 +1,26 @@
 import { Trophy } from "lucide-react";
-import type { IceRow } from "@/lib/types";
+import type { LeverageRow } from "@/lib/types";
 
-export function IceTable({ rows }: { rows: IceRow[] }) {
-  const max = Math.max(...rows.map((r) => r.ice), 1);
+export function LeverageTable({ rows }: { rows: LeverageRow[] }) {
+  const max = Math.max(...rows.map((r) => r.score), 1);
 
   return (
     <div className="panel overflow-hidden">
       <div className="flex items-center justify-between border-b border-white/[0.06] px-5 py-3.5">
-        <h3 className="font-display text-sm font-semibold text-white">ICE ranking</h3>
-        <span className="font-mono text-[11px] text-slate-500">Impact × Confidence × Ease</span>
+        <h3 className="font-display text-sm font-semibold text-white">GTM leverage ranking</h3>
+        <span className="font-mono text-[11px] text-slate-500">Revenue · ICP fit · Evidence · Time-to-signal</span>
       </div>
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[34rem] text-left text-sm">
+        <table className="w-full min-w-[36rem] text-left text-sm">
           <thead>
             <tr className="text-[11px] uppercase tracking-wider text-slate-500">
               <th className="px-5 py-2.5 font-medium">#</th>
               <th className="px-2 py-2.5 font-medium">Hypothesis</th>
-              <th className="px-2 py-2.5 text-center font-medium">I</th>
-              <th className="px-2 py-2.5 text-center font-medium">C</th>
-              <th className="px-2 py-2.5 text-center font-medium">E</th>
-              <th className="px-5 py-2.5 text-right font-medium">ICE</th>
+              <th className="px-2 py-2.5 text-center font-medium" title="Revenue impact">Rev</th>
+              <th className="px-2 py-2.5 text-center font-medium" title="ICP fit">ICP</th>
+              <th className="px-2 py-2.5 text-center font-medium" title="Evidence">Evid</th>
+              <th className="px-2 py-2.5 text-center font-medium" title="Time-to-signal">Time</th>
+              <th className="px-5 py-2.5 text-right font-medium">Score</th>
             </tr>
           </thead>
           <tbody>
@@ -40,18 +41,19 @@ export function IceTable({ rows }: { rows: IceRow[] }) {
                     <p className={`line-clamp-2 max-w-md text-[13px] ${top ? "text-white" : "text-slate-300"}`}>{r.statement}</p>
                     <span className="mt-0.5 inline-block font-mono text-[10px] uppercase tracking-wider text-slate-500">{r.lever}</span>
                   </td>
-                  <td className="px-2 py-3 text-center align-top font-mono text-slate-400">{r.impact}</td>
-                  <td className="px-2 py-3 text-center align-top font-mono text-slate-400">{r.confidence}</td>
-                  <td className="px-2 py-3 text-center align-top font-mono text-slate-400">{r.ease}</td>
+                  <td className="px-2 py-3 text-center align-top font-mono text-slate-400">{r.revenueImpact}</td>
+                  <td className="px-2 py-3 text-center align-top font-mono text-slate-400">{r.icpFit}</td>
+                  <td className="px-2 py-3 text-center align-top font-mono text-slate-400">{r.evidence}</td>
+                  <td className="px-2 py-3 text-center align-top font-mono text-slate-400">{r.timeToSignal}</td>
                   <td className="px-5 py-3 text-right align-top">
                     <div className="flex items-center justify-end gap-2">
                       <span className="h-1.5 w-16 overflow-hidden rounded-full bg-white/[0.06]">
                         <span
                           className={`block h-full rounded-full ${top ? "bg-lime" : "bg-slate-500"}`}
-                          style={{ width: `${(r.ice / max) * 100}%` }}
+                          style={{ width: `${(r.score / max) * 100}%` }}
                         />
                       </span>
-                      <span className={`font-mono font-semibold ${top ? "text-lime" : "text-slate-300"}`}>{r.ice}</span>
+                      <span className={`font-mono font-semibold ${top ? "text-lime" : "text-slate-300"}`}>{r.score}</span>
                     </div>
                   </td>
                 </tr>

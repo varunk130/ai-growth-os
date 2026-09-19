@@ -29,20 +29,22 @@ export interface Hypothesis {
   lever: Lever;
   targetLeak: string;
   rationale: string;
-  impact: number; // 1..10
-  confidence: number; // 1..10
-  ease: number; // 1..10
+  revenueImpact: number; // 1..10 — pipeline / revenue moved if the bet works
+  icpFit: number; // 1..10 — how squarely it reaches the ICP segment and buying motion
+  evidence: number; // 1..10 — strength of the supporting signal (data, research, past wins)
+  timeToSignal: number; // 1..10 — how fast it ships and returns a readable market signal
   expectedLift: number; // relative lift on the target metric (e.g., 0.22 = +22%)
 }
 
-export interface IceRow {
+export interface LeverageRow {
   hypothesisId: string;
   statement: string;
   lever: Lever;
-  impact: number;
-  confidence: number;
-  ease: number;
-  ice: number; // impact * confidence * ease
+  revenueImpact: number;
+  icpFit: number;
+  evidence: number;
+  timeToSignal: number;
+  score: number; // GTM Leverage Score, 0..100
   rank: number;
 }
 

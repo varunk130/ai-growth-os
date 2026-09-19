@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CheckCircle2, TrendingUp, Play } from "lucide-react";
 import { Section, Eyebrow, Stat } from "@/components/ui";
 import { precomputeCycles } from "@/lib/precompute";
-import { IceTable } from "@/components/demo/IceTable";
+import { LeverageTable } from "@/components/demo/IceTable";
 import { VariantPreview } from "@/components/demo/VariantPreview";
 import { ReadoutCard } from "@/components/demo/ReadoutCard";
 import { WauProjectionChart } from "@/components/demo/WauProjectionChart";
@@ -82,7 +82,7 @@ export default async function ResultsPage() {
       <Section className="!pt-0">
         <Eyebrow className="mb-5">Cycle 1 · scored and tested</Eyebrow>
         <div className="space-y-4">
-          <IceTable rows={headline.iceTable} />
+          <LeverageTable rows={headline.leverageTable} />
           <div className="grid gap-4 lg:grid-cols-2">
             <VariantPreview asset={headline.asset} source={headline.assetSource} />
             <ReadoutCard readout={headline.readout} />

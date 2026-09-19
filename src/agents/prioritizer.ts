@@ -1,23 +1,23 @@
 import { scoreAndRank } from "@/skills/ice-score";
-import type { Experiment, Hypothesis, IceRow, Leak } from "@/lib/types";
+import type { Experiment, Hypothesis, LeverageRow, Leak } from "@/lib/types";
 import type { AgentContext } from "./types";
 import { metricForLeak } from "./util";
 
-// Prioritizer — computes ICE scores (real math) and picks the top experiment.
+// Prioritizer — computes GTM Leverage Scores (real math) and picks the top experiment.
 export async function runPrioritizer(
   ctx: AgentContext,
   input: { hypotheses: Hypothesis[]; leak: Leak },
-): Promise<{ iceTable: IceRow[]; top: Hypothesis; experiment: Experiment }> {
+): Promise<{ leverageTable: LeverageRow[]; top: Hypothesis; experiment: Experiment }> {
   ctx.emit({
     cycle: ctx.cycle,
     agent: "prioritizer",
     status: "thinking",
-    headline: "Scoring each bet by Impact × Confidence × Ease…",
+    headline: "Scoring each bet on revenue impact, ICP fit, evidence, and time-to-signal…",
   });
   await ctx.wait(700);
 
-  const iceTable = scoreAndRank(input.hypotheses);
-  const topRow = iceTable[0];
+  const leverageTable = scoreAndRank(input.hypotheses);
+  const topRow = leverageTable[0];
   const top = input.hypotheses.find((h) => h.id === topRow.hypothesisId) as Hypothesis;
 
   const experiment: Experiment = {
@@ -32,23 +32,24 @@ export async function runPrioritizer(
     agent: "prioritizer",
     status: "done",
     headline: `Picked the winner: “${top.statement}”`,
-    detail: `Highest ICE of ${iceTable.length} bets — Impact ${topRow.impact} × Confidence ${topRow.confidence} × Ease ${topRow.ease}.`,
+    detail: `Highest GTM Leverage of ${leverageTable.length} bets — Revenue ${topRow.revenueImpact} · ICP fit ${topRow.icpFit} · Evidence ${topRow.evidence} · Time-to-signal ${topRow.timeToSignal}.`,
     toolCalls: [
       {
         tool: "scoreAndRank()",
-        skill: "ice-score",
+        skill: "gtm-leverage",
         input: `${input.hypotheses.length} hypotheses`,
-        output: `top ICE = ${topRow.ice} (${top.id})`,
+        output: `top score = ${topRow.score}/100 (${top.id})`,
       },
     ],
     chips: [
-      { label: "Impact", value: String(topRow.impact) },
-      { label: "Confidence", value: String(topRow.confidence) },
-      { label: "Ease", value: String(topRow.ease) },
-      { label: "ICE", value: String(topRow.ice), tone: "accent" },
+      { label: "Revenue", value: String(topRow.revenueImpact) },
+      { label: "ICP fit", value: String(topRow.icpFit) },
+      { label: "Evidence", value: String(topRow.evidence) },
+      { label: "Time-to-signal", value: String(topRow.timeToSignal) },
+      { label: "Leverage", value: `${topRow.score}/100`, tone: "accent" },
     ],
     handoffTo: "experiment-designer",
   });
 
-  return { iceTable, top, experiment };
+  return { leverageTable, top, experiment };
 }

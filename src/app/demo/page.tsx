@@ -8,7 +8,7 @@ import { AgentTrace } from "@/components/demo/AgentTrace";
 import { Conversation } from "@/components/demo/Conversation";
 import { GrowthModelWidget } from "@/components/demo/GrowthModelWidget";
 import { ExperimentBacklog } from "@/components/demo/ExperimentBacklog";
-import { IceTable } from "@/components/demo/IceTable";
+import { LeverageTable } from "@/components/demo/IceTable";
 import { VariantPreview } from "@/components/demo/VariantPreview";
 import { ReadoutCard } from "@/components/demo/ReadoutCard";
 import { WauProjectionChart } from "@/components/demo/WauProjectionChart";
@@ -61,7 +61,7 @@ export default function DemoPage() {
               <span className="h-px flex-1 bg-white/[0.06]" />
               <span className="font-mono text-[11px] text-slate-500">cycle {c.latest.cycle}</span>
             </div>
-            <IceTable rows={c.latest.iceTable} />
+            <LeverageTable rows={c.latest.leverageTable} />
             <div className="grid gap-4 lg:grid-cols-2">
               <VariantPreview asset={c.latest.asset} source={c.latest.assetSource} />
               <ReadoutCard readout={c.latest.readout} />

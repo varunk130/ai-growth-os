@@ -64,7 +64,7 @@ export async function runCycle(opts: RunCycleOptions): Promise<RunCycleOutput> {
   await ctx.wait(280);
   const { hypotheses } = await runHypothesisWriter(ctx, { leak });
   await ctx.wait(280);
-  const { iceTable, experiment } = await runPrioritizer(ctx, { hypotheses, leak });
+  const { leverageTable, experiment } = await runPrioritizer(ctx, { hypotheses, leak });
   await ctx.wait(280);
   const { design } = await runExperimentDesigner(ctx, { leak, experiment });
   await ctx.wait(280);
@@ -123,7 +123,7 @@ export async function runCycle(opts: RunCycleOptions): Promise<RunCycleOutput> {
     goal: opts.goal,
     leak,
     hypotheses,
-    iceTable,
+    leverageTable,
     topExperiment: experiment,
     design,
     asset,

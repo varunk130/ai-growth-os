@@ -2,7 +2,7 @@ import type {
   Experiment,
   ExperimentDesign,
   Hypothesis,
-  IceRow,
+  LeverageRow,
   Leak,
   Learning,
   Readout,
@@ -58,7 +58,7 @@ export const AGENTS: Record<AgentId, AgentMeta> = {
     id: "prioritizer",
     name: "Prioritizer",
     role: "Analysis sub-agent",
-    tagline: "Scores bets by ICE and picks the winner.",
+    tagline: "Ranks bets by GTM leverage and picks the winner.",
     accent: "teal",
     kind: "analysis",
   },
@@ -133,7 +133,7 @@ export interface CycleResult {
   goal: string;
   leak: Leak;
   hypotheses: Hypothesis[];
-  iceTable: IceRow[];
+  leverageTable: LeverageRow[];
   topExperiment: Experiment;
   design: ExperimentDesign;
   asset: VariantAsset;

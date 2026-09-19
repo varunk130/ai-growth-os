@@ -1,9 +1,10 @@
 import type { Hypothesis } from "@/lib/types";
 
 // Curated, scenario-specific hypotheses. The Hypothesis Writer selects from these
-// for the leak the Funnel Analyst surfaced; the Prioritizer then scores them with
-// real ICE math. impact/confidence/ease are authored on a 1-10 scale; expectedLift
-// is the relative lift on the target metric used by the (real) experiment simulation.
+// for the leak the Funnel Analyst surfaced; the Prioritizer then ranks them with the
+// GTM Leverage Score. revenueImpact / icpFit / evidence / timeToSignal are authored on
+// a 1-10 scale; expectedLift is the relative lift on the target metric used by the
+// (real) experiment simulation.
 
 export const HYPOTHESES: Record<string, Hypothesis[]> = {
   activation_cliff: [
@@ -14,9 +15,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "activation_cliff",
       rationale:
         "The drop is between signup and first API call, and most signups never return to the dashboard. A timely email that removes key-creation friction and hands over a working snippet meets users where they are.",
-      impact: 7,
-      confidence: 8,
-      ease: 8,
+      revenueImpact: 7,
+      icpFit: 8,
+      evidence: 8,
+      timeToSignal: 8,
       expectedLift: 0.18,
     },
     {
@@ -26,9 +28,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "activation_cliff",
       rationale:
         "Key creation is a classic activation tax. Issuing a scoped sandbox key at signup collapses the steps between 'account' and 'first call'.",
-      impact: 8,
-      confidence: 7,
-      ease: 7,
+      revenueImpact: 8,
+      icpFit: 7,
+      evidence: 7,
+      timeToSignal: 7,
       expectedLift: 0.2,
     },
     {
@@ -38,9 +41,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "activation_cliff",
       rationale:
         "A runnable surface inside the product removes the local-setup barrier entirely and lets users feel the 200ms response before they commit to installing anything.",
-      impact: 9,
-      confidence: 7,
-      ease: 5,
+      revenueImpact: 9,
+      icpFit: 6,
+      evidence: 7,
+      timeToSignal: 5,
       expectedLift: 0.24,
     },
     {
@@ -50,9 +54,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "activation_cliff",
       rationale:
         "Docs/SEO drives the most signups but activates worst. A shorter, copy-paste-first quickstart converts that traffic instead of burying the call in setup prose.",
-      impact: 6,
-      confidence: 7,
-      ease: 9,
+      revenueImpact: 6,
+      icpFit: 7,
+      evidence: 7,
+      timeToSignal: 9,
       expectedLift: 0.14,
     },
     {
@@ -62,9 +67,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "activation_cliff",
       rationale:
         "Developers live in the terminal. A one-command scaffold produces a guaranteed-working call without copy-paste errors.",
-      impact: 8,
-      confidence: 6,
-      ease: 6,
+      revenueImpact: 8,
+      icpFit: 7,
+      evidence: 6,
+      timeToSignal: 6,
       expectedLift: 0.2,
     },
     {
@@ -74,9 +80,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "activation_cliff",
       rationale:
         "For users who do reach the dashboard, a single obvious next action with a runnable sample reduces decision friction.",
-      impact: 5,
-      confidence: 7,
-      ease: 9,
+      revenueImpact: 5,
+      icpFit: 5,
+      evidence: 7,
+      timeToSignal: 9,
       expectedLift: 0.12,
     },
     {
@@ -86,9 +93,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "activation_cliff",
       rationale:
         "A generic snippet adds translation work. Framework-native examples cut the distance between docs and a running call.",
-      impact: 7,
-      confidence: 6,
-      ease: 6,
+      revenueImpact: 7,
+      icpFit: 8,
+      evidence: 6,
+      timeToSignal: 6,
       expectedLift: 0.15,
     },
     {
@@ -98,9 +106,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "activation_cliff",
       rationale:
         "Community-sourced signups already live in Discord. A light human touch at the moment of friction rescues otherwise-lost activations.",
-      impact: 5,
-      confidence: 6,
-      ease: 7,
+      revenueImpact: 5,
+      icpFit: 4,
+      evidence: 6,
+      timeToSignal: 7,
       expectedLift: 0.1,
     },
   ],
@@ -112,9 +121,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "week2_retention",
       rationale:
         "Users activate but stall before week 2 because they don't see a second use case. Concrete recipes give a reason to come back inside the retention-critical window.",
-      impact: 7,
-      confidence: 8,
-      ease: 8,
+      revenueImpact: 7,
+      icpFit: 8,
+      evidence: 8,
+      timeToSignal: 8,
       expectedLift: 0.2,
     },
     {
@@ -124,9 +134,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "week2_retention",
       rationale:
         "Milestones turn raw usage into a sense of progress and surface the next capability exactly when it's relevant.",
-      impact: 6,
-      confidence: 7,
-      ease: 7,
+      revenueImpact: 6,
+      icpFit: 7,
+      evidence: 7,
+      timeToSignal: 7,
       expectedLift: 0.16,
     },
     {
@@ -136,9 +147,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "week2_retention",
       rationale:
         "Social proof from comparable teams is a strong second-week pull and reduces the blank-page problem.",
-      impact: 6,
-      confidence: 6,
-      ease: 7,
+      revenueImpact: 6,
+      icpFit: 7,
+      evidence: 6,
+      timeToSignal: 7,
       expectedLift: 0.14,
     },
     {
@@ -148,9 +160,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "week2_retention",
       rationale:
         "Making accumulated value visible reinforces the habit and gives champions an internal story to retell.",
-      impact: 6,
-      confidence: 7,
-      ease: 6,
+      revenueImpact: 6,
+      icpFit: 6,
+      evidence: 7,
+      timeToSignal: 6,
       expectedLift: 0.12,
     },
     {
@@ -160,9 +173,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "week2_retention",
       rationale:
         "Silent breakage is a leading churn cause for SDKs. Catching it first turns a churn moment into a save.",
-      impact: 7,
-      confidence: 6,
-      ease: 5,
+      revenueImpact: 7,
+      icpFit: 8,
+      evidence: 6,
+      timeToSignal: 5,
       expectedLift: 0.15,
     },
     {
@@ -172,9 +186,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "week2_retention",
       rationale:
         "High-intent teams convert faster with a low-friction human channel; it also surfaces roadmap signal.",
-      impact: 4,
-      confidence: 6,
-      ease: 8,
+      revenueImpact: 4,
+      icpFit: 5,
+      evidence: 6,
+      timeToSignal: 8,
       expectedLift: 0.1,
     },
   ],
@@ -186,9 +201,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "integration_gap",
       rationale:
         "Users make a first call but stall before a real integration. End-to-end recipes bridge 'it responded' to 'it's wired into my app'.",
-      impact: 6,
-      confidence: 7,
-      ease: 7,
+      revenueImpact: 6,
+      icpFit: 8,
+      evidence: 7,
+      timeToSignal: 7,
       expectedLift: 0.16,
     },
     {
@@ -197,9 +213,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       lever: "onboarding",
       targetLeak: "integration_gap",
       rationale: "A deterministic verification step catches the silent misconfigurations that block successful integration.",
-      impact: 5,
-      confidence: 7,
-      ease: 7,
+      revenueImpact: 5,
+      icpFit: 7,
+      evidence: 7,
+      timeToSignal: 7,
       expectedLift: 0.13,
     },
     {
@@ -208,9 +225,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       lever: "in-product",
       targetLeak: "integration_gap",
       rationale: "Better error ergonomics reduce the debugging tax that stalls first integrations.",
-      impact: 6,
-      confidence: 6,
-      ease: 6,
+      revenueImpact: 6,
+      icpFit: 7,
+      evidence: 6,
+      timeToSignal: 6,
       expectedLift: 0.12,
     },
   ],
@@ -222,9 +240,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       targetLeak: "channel_mix",
       rationale:
         "Partnerships carries the highest CAC and middling activation; GitHub is the cheapest, best-activating channel. Shifting spend lifts blended activation and lowers cost per activated user.",
-      impact: 7,
-      confidence: 6,
-      ease: 8,
+      revenueImpact: 7,
+      icpFit: 9,
+      evidence: 6,
+      timeToSignal: 8,
       expectedLift: 0.18,
     },
     {
@@ -233,9 +252,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       lever: "docs",
       targetLeak: "channel_mix",
       rationale: "Docs/SEO drives the most signups but the worst activation; activating in-page closes the gap on the largest channel.",
-      impact: 6,
-      confidence: 6,
-      ease: 6,
+      revenueImpact: 6,
+      icpFit: 7,
+      evidence: 6,
+      timeToSignal: 6,
       expectedLift: 0.14,
     },
     {
@@ -244,9 +264,10 @@ export const HYPOTHESES: Record<string, Hypothesis[]> = {
       lever: "onboarding",
       targetLeak: "channel_mix",
       rationale: "Channel intent differs; a GitHub visitor and a partnership lead want different first steps.",
-      impact: 6,
-      confidence: 6,
-      ease: 5,
+      revenueImpact: 6,
+      icpFit: 8,
+      evidence: 6,
+      timeToSignal: 5,
       expectedLift: 0.12,
     },
   ],
