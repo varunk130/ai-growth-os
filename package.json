@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "description": "Compound - an agentic Growth Experiment Engine. Runs a compounding experiment loop fully locally, no API keys.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunk130/ai-growth-os.git"
+  },
+  "homepage": "https://github.com/varunk130/ai-growth-os#readme",
   "scripts": {
     "dev": "next dev -p 3004",
     "build": "next build",
