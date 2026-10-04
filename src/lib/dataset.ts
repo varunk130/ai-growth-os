@@ -21,7 +21,3 @@ export function dailySum(key: "signups" | "firstApiCall" | "firstIntegration", d
 export function currentWau(data: FunnelData = funnelData): number {
   return data.daily[data.daily.length - 1].wau;
 }
-
-export function wauSeries(data: FunnelData = funnelData): number[] {
-  return data.daily.map((d) => d.wau);
-}
