@@ -36,10 +36,6 @@ export function Section({ children, className = "", id }: { children: ReactNode;
   );
 }
 
-export function Panel({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <div className={`panel ${className}`}>{children}</div>;
-}
-
 export function Stat({ value, label, tone = "default" }: { value: ReactNode; label: ReactNode; tone?: "default" | "lime" | "teal" }) {
   const toneClass = tone === "lime" ? "text-lime" : tone === "teal" ? "text-teal" : "text-white";
   return (
