@@ -2,8 +2,6 @@ export const pct = (x: number, dp = 0): string => `${(x * 100).toFixed(dp)}%`;
 
 export const signedPct = (x: number, dp = 0): string => `${x >= 0 ? "+" : ""}${(x * 100).toFixed(dp)}%`;
 
-export const usd = (x: number): string => `$${Math.round(x).toLocaleString("en-US")}`;
-
 export const num = (x: number): string => Math.round(x).toLocaleString("en-US");
 
 export const compact = (x: number): string => {

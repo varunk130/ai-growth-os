@@ -24,8 +24,3 @@ export const NARRATION: Record<AgentId, string> = {
 
 export const CLOSING =
   "Loop done. The win is written to memory, the experiment joins the backlog, and the WAU projection just compounded.";
-
-export const GUIDED_HINTS: string[] = [
-  "Try “WAU is flat this week — find the leak and run the next experiment.”",
-  "Then hit Run another cycle to watch Compound get smarter.",
-];

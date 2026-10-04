@@ -36,36 +36,12 @@ export function Section({ children, className = "", id }: { children: ReactNode;
   );
 }
 
-export function Panel({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <div className={`panel ${className}`}>{children}</div>;
-}
-
 export function Stat({ value, label, tone = "default" }: { value: ReactNode; label: ReactNode; tone?: "default" | "lime" | "teal" }) {
   const toneClass = tone === "lime" ? "text-lime" : tone === "teal" ? "text-teal" : "text-white";
   return (
     <div className="panel-quiet px-4 py-3.5">
       <div className={`font-display text-2xl font-semibold tracking-tight ${toneClass}`}>{value}</div>
       <div className="mt-1 text-xs text-slate-400">{label}</div>
-    </div>
-  );
-}
-
-export function SectionHeading({
-  eyebrow,
-  title,
-  intro,
-  className = "",
-}: {
-  eyebrow?: string;
-  title: ReactNode;
-  intro?: ReactNode;
-  className?: string;
-}) {
-  return (
-    <div className={`max-w-2xl ${className}`}>
-      {eyebrow && <Eyebrow className="mb-3">{eyebrow}</Eyebrow>}
-      <h2 className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">{title}</h2>
-      {intro && <p className="mt-4 text-[15px] leading-relaxed text-slate-400">{intro}</p>}
     </div>
   );
 }
